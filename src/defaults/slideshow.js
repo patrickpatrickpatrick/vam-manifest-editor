@@ -41,6 +41,10 @@ export default {
             'info-position-center',
           ],
         },
+        {
+          label: 'embedded annotations in slide',
+          values: ['not-embedded-tour', 'embedded-tour'],
+        }
       ],
     },
   },
@@ -73,7 +77,7 @@ export default {
   },
   iiifResourceDefaults: {
     Canvas: {
-      behavior: ['layout-split', 'info-position-left'],
+      behavior: ['layout-split', 'info-position-left', 'not-embedded-tour'],
     },
   },
   propertyPanel: {
